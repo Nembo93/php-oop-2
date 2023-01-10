@@ -14,10 +14,9 @@ class Food extends Products{
         $this->price = $price;
         $this->ingredients = $ingredients;
     }
-
 }
 
-$food= [
+$foods = [
     new Food("Crocchette Meow", "img", "Food", 5, "Carne, verdure"),
     new Food("Manzo Meow", "img", "Food", 3, "Manzo, verdure"),
     new Food("Salmone Meow", "img", "Food", 3, "Salmone, verdure"),
