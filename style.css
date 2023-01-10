@@ -7,11 +7,21 @@
 .container{
     background-color: greenyellow;
 }
+.titolo_pagina{
+    text-align: center;
+    color: red;
+}
 .box_prodotti{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
+}
+.box_titolo{
+    text-align: center;
+    color: red;
+    background-color: yellow;
+    border: 2px solid green;
 }
 .card{
     width: 250px;

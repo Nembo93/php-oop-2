@@ -17,10 +17,18 @@ require_once __DIR__ ."/classes/Products.php";
 <body>
     <div class="container">
 
+    <div class="titolo_pagina">
+        <h1>Pet's world</h1>
+    </div>
+
+    <div class="box_categorie">
+        <div class="box_titolo">
+            <h2>Food</h2>
+        </div>
         <div class="box_prodotti">
             <?php foreach($foods as $food){ ?>
                 <div class="card">
-                    <h2><?php echo $food->name ?></h2>
+                    <h3><?php echo $food->name ?></h3>
                     <div class="img"><?php echo $food->image ?></div>
                     <div class="info"><?php echo $food->type ?></div>
                     <div class="info"><?php echo $food->price ?></div>
@@ -28,6 +36,46 @@ require_once __DIR__ ."/classes/Products.php";
                 </div>
             <?php } ?>
         </div>
+    </div>
+        
+
+
+        <div class="box_categorie">
+            <div class="box_titolo">
+                <h2>Toys</h2>
+            </div>
+            <div class="box_prodotti">
+                <?php foreach($toys as $toy){ ?>
+                    <div class="card">
+                        <h3><?php echo $toy->name ?></h3>
+                        <div class="img"><?php echo $toy->image ?></div>
+                        <div class="info"><?php echo $toy->type ?></div>
+                        <div class="info"><?php echo $toy->price ?></div>
+                        <div class="info"><?php echo $toy->item ?></div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+        
+        
+
+        <div class="box_categorie">
+        <div class="box_titolo">
+            <h2>Shelters</h2>
+        </div>
+            <div class="box_prodotti">
+                <?php foreach($shelters as $shelter){ ?>
+                    <div class="card">
+                        <h3><?php echo $shelter->name ?></h3>
+                        <div class="img"><?php echo $shelter->image ?></div>
+                        <div class="info"><?php echo $shelter->type ?></div>
+                        <div class="info"><?php echo $shelter->price ?></div>
+                        <div class="info"><?php echo $shelter->size ?></div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+        
         
 
     </div>
