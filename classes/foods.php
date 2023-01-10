@@ -1,8 +1,9 @@
 <?php
 class Food extends Products{
-    public $name;
-    public $price;
+    // public $name;
+    // public $price;
     public $ingredients;
+
 }
 
 $food= [
