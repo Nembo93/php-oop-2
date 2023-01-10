@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: greenyellow;
+}
+.box_prodotti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.card{
+    width: 250px;
+    padding: 20px;
+    background-color: green;
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+.img{
+    width: 200px;
+    margin: auto;
+    background-color: yellow;
+    text-align: center;
+    padding: 20px 0px;
+}

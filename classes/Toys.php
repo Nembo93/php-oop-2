@@ -1,4 +1,5 @@
 <?php
+
 class Toys extends Products{
     public $name;
     public $image;

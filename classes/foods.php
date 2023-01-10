@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ ."/Categories.php";
+
 class Food extends Products{
     public $name;
     public $image;
