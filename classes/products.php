@@ -15,7 +15,19 @@ class Products{
         $this->name = $name;
         $this->image = $image;
         $this->type = $type;
-        $this->price = $price;       
+        $this->price = $price;
+        
+        function getPrice($price){
+            if (!is_int($price)){
+                throw new Exception("Non è un numero");
+                return $price;
+            }
+            try {
+                echo getPrice($price);
+            } catch (Exception $e){
+                echo "Eccezione: " . $e->getMessage();
+            }
+        }
     }
 
 }

@@ -16,25 +16,13 @@ class Food extends Products{
         $this->category = $category;
         $this->type = $type;
         $this->price = $price;
-        
         $this->ingredients = $ingredients;
     }
-
-    public function getPrice($price){
-        if (!is_int($price)){
-            throw new Exception("Non è un numero");
-            return $price;
-        }
-    }
-    try {
-        echo getPrice();
-    } catch (Exception $e){
-        echo "Eccezione: " . $e->getMessage();
-    }
+    
 }
 
 $foods = [
-    new Food("Crocchette Meow", "img", new Categories ("Cat"), "Food", 5, "Carne, verdure"),
+    new Food("Crocchette Meow", "img", new Categories ("Cat"), "Food", "ciao", "Carne, verdure"),
     new Food("Manzo Meow", "img", new Categories ("Cat"), "Food", 3, "Manzo, verdure"),
     new Food("Salmone Meow", "img", new Categories ("Cat"), "Food", 3, "Salmone, verdure"),
     new Food("Crocchette Bau", "img", new Categories ("Dog"), "Food", 7, "Carne"),
