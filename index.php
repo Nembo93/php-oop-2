@@ -71,6 +71,7 @@ require_once __DIR__ ."/classes/Products.php";
                         <div class="info"><?php echo $shelter->type ?></div>
                         <div class="info"><?php echo $shelter->price ?></div>
                         <div class="info"><?php echo $shelter->size ?></div>
+                        <div class="info"><?php echo $shelter->plast ?></div>
                     </div>
                 <?php } ?>
             </div>
