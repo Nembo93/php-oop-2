@@ -24,7 +24,7 @@ $shelters = [
     new Shelters("Mini house Meow", "img", new Categories ("Cat"), "Shelter", 18, "Small"),
     new Shelters("Mini bed Bau", "img", new Categories ("Dog"), "Shelter", 10, "Small"),
     new Shelters("Bed Bau", "img", new Categories ("Dog"), "Shelter", 15, "Regular"),
-    new Shelters("Mini house Bau", "img", new Categories ("Dog"),"Shelter", "Toy", 18, "Small"),
+    new Shelters("Mini house Bau", "img", new Categories ("Dog"),"Shelter", 18, "Small"),
     new Shelters("House Bau", "img", new Categories ("Dog"), "Shelter", 30, "Regular"),
 ]
 ?>

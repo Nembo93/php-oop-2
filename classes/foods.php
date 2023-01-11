@@ -16,7 +16,20 @@ class Food extends Products{
         $this->category = $category;
         $this->type = $type;
         $this->price = $price;
+        
         $this->ingredients = $ingredients;
+    }
+
+    public function getPrice($price){
+        if (!is_int($price)){
+            throw new Exception("Non è un numero");
+            return $price;
+        }
+    }
+    try {
+        echo getPrice();
+    } catch (Exception $e){
+        echo "Eccezione: " . $e->getMessage();
     }
 }
 
@@ -28,5 +41,8 @@ $foods = [
     new Food("Pollo Bau", "img", new Categories ("Dog"), "Food", 3, "Food", "Pollo, verdure"),
     new Food("Manzo e verdure Bau", "img", new Categories ("Dog"), "Food", 4, "Manzo, verdure"),
 ]
+
+
+
 
 ?>

@@ -17,5 +17,6 @@ class Products{
         $this->type = $type;
         $this->price = $price;       
     }
+
 }
 ?>
